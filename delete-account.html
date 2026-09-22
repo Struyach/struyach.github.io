@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Struyach Athlete — Delete Account</title>
+<style>
+:root{--bg:#242726;--surface:#2d3130;--text:#f5f7f5;--muted:#a2aaa6;--green:#6fd874;--line:rgba(255,255,255,.12);--warning:#f0a1a1}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 85% 8%,rgba(111,216,116,.08),transparent 30%),var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans Thai",Helvetica,Arial,sans-serif;line-height:1.65}
+.page{width:min(820px,calc(100% - 36px));margin:0 auto;padding:28px 0 56px}header{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:54px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.brand-mark{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(255,255,255,.22);border-radius:12px;background:rgba(255,255,255,.04)}.brand-mark img{width:31px;height:31px;object-fit:contain;filter:brightness(0) invert(1) drop-shadow(0 0 4px rgba(255,255,255,.16))}.brand b{color:var(--green)}
+.language{display:flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px;background:rgba(17,21,21,.72)}.language button{border:0;background:transparent;color:var(--muted);font:700 12px inherit;padding:7px 11px;border-radius:999px;cursor:pointer}.language button.active{background:var(--text);color:#0b0e0d}
+.content{display:none}.content.active{display:block}h1{max-width:760px;margin:0 0 12px;font-size:clamp(2.2rem,7vw,4rem);line-height:1.04;letter-spacing:-.045em}.subtitle{margin:0 0 38px;color:var(--green);font-size:.9rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.card{padding:clamp(22px,5vw,38px);border:1px solid var(--line);border-radius:22px;background:var(--surface)}h2{margin:38px 0 12px;padding-top:32px;border-top:1px solid var(--line);color:var(--green);font-size:1.3rem}h2:first-of-type{margin-top:30px}p{margin:0 0 15px;color:var(--muted)}ol,ul{margin:12px 0 20px;padding-left:24px;color:var(--muted)}li{margin:10px 0;padding-left:4px}strong{color:var(--text)}a{color:var(--green);text-underline-offset:3px}
+.notice{margin:24px 0;padding:16px 18px;border-radius:12px;background:rgba(111,216,116,.07);border-left:4px solid var(--green);color:var(--muted)}.notice.warning{background:rgba(240,161,161,.07);border-left-color:var(--warning)}.notice p{margin:0}.notice.warning strong{color:var(--warning)}
+footer{margin-top:28px;padding-top:22px;border-top:1px solid var(--line);font-size:.82rem}footer a{margin-right:14px}
+@media(max-width:560px){.page{padding-top:18px}header{align-items:flex-start;margin-bottom:40px}.brand{font-size:.78rem;gap:8px}.brand-mark{width:36px;height:36px;border-radius:10px}.brand-mark img{width:27px;height:27px}.language button{padding:6px 8px}.card{padding:22px 19px}}
+</style>
+</head>
+<body>
+<main class="page">
+<header>
+<div class="brand"><span class="brand-mark" aria-hidden="true"><img src="data:image/png;base64,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" alt=""></span><span>Struyach <b>Athlete</b></span></div>
+<nav class="language" aria-label="Language"><button type="button" data-lang="en">EN</button><button type="button" data-lang="ru">RU</button><button type="button" data-lang="th">TH</button></nav>
+</header>
+
+<section class="content" data-content="en">
+<h1>How to Delete Your Account</h1><p class="subtitle">Struyach Fitness Apps</p>
+<div class="card">
+<p>You can permanently delete your Struyach Athlete account and all associated data directly from within the app, at any time, without needing to contact support.</p>
+<h2>Step-by-step instructions</h2>
+<ol>
+<li>Open the Struyach Athlete app and sign in to your account.</li>
+<li>Tap the <strong>Settings</strong> tab at the bottom of the screen.</li>
+<li>Scroll down to the <strong>“Log out or delete account”</strong> section.</li>
+<li>Tap <strong>“Delete account and all data”</strong>.</li>
+<li>Read the confirmation warning and type <strong>“Confirm”</strong> in the text field to proceed.</li>
+<li>Tap <strong>Delete</strong>. Your account and all associated data will be permanently removed immediately.</li>
+</ol>
+<div class="notice warning"><strong>This action is irreversible.</strong> Once confirmed, your account cannot be recovered.</div>
+<h2>What gets deleted</h2><p>When you delete your account, the following data is permanently removed:</p>
+<ul>
+<li>Your account profile (name, email, avatar photo)</li>
+<li>Your personal records (weightlifting and gymnastics)</li>
+<li>All photos and videos you uploaded to comments</li>
+<li>All comments you posted, across all training plans and blog posts</li>
+<li>Your liked posts, liked workouts, and completed-workout progress</li>
+<li>Your workout diary entries</li>
+<li>Your notification preferences and device token</li>
+</ul>
+<h2>What is not affected</h2><div class="notice"><p>Comments and content posted by <em>other users</em> that reference or reply to you are not deleted, since they belong to those other users’ own accounts. Deleting your account only removes data tied to your own account.</p></div>
+<h2>Timeline</h2><p>Deletion is immediate — there is no waiting period. Once you confirm the deletion, your data is removed from our systems right away.</p>
+<h2>Need help?</h2><p>If you’re unable to access the app to delete your account yourself (for example, if you’ve lost access to your device), contact us at <a href="mailto:feedback.struyach@gmail.com">feedback.struyach@gmail.com</a> and we will process the deletion request on your behalf.</p>
+</div></section>
+
+<section class="content" data-content="ru">
+<h1>Как удалить аккаунт</h1><p class="subtitle">Struyach Fitness Apps</p>
+<div class="card">
+<p>Ты можешь в любое время навсегда удалить аккаунт Struyach Athlete и все связанные с ним данные прямо в приложении — обращаться в поддержку для этого не нужно.</p>
+<h2>Пошаговая инструкция</h2>
+<ol>
+<li>Открой приложение Struyach Athlete и войди в свой аккаунт.</li>
+<li>Нажми вкладку <strong>«Настройки»</strong> в нижней части экрана.</li>
+<li>Прокрути страницу до раздела <strong>«Выход или удаление аккаунта»</strong>.</li>
+<li>Нажми <strong>«Удалить аккаунт и все данные»</strong>.</li>
+<li>Прочитай предупреждение и введи <strong>«Подтвердить»</strong> в текстовом поле.</li>
+<li>Нажми <strong>«Удалить»</strong>. Аккаунт и все связанные с ним данные будут немедленно удалены навсегда.</li>
+</ol>
+<div class="notice warning"><strong>Это действие необратимо.</strong> После подтверждения восстановить аккаунт будет невозможно.</div>
+<h2>Какие данные будут удалены</h2><p>При удалении аккаунта навсегда удаляются:</p>
+<ul>
+<li>Профиль аккаунта: имя, email и фотография аватара</li>
+<li>Личные рекорды в тяжёлой атлетике и гимнастике</li>
+<li>Все фотографии и видео, загруженные тобой в комментарии</li>
+<li>Все твои комментарии во всех тренировочных планах и публикациях блога</li>
+<li>Понравившиеся публикации и тренировки, а также прогресс выполнения тренировок</li>
+<li>Записи в дневнике тренировок</li>
+<li>Настройки уведомлений и токен устройства</li>
+</ul>
+<h2>Что не будет удалено</h2><div class="notice"><p>Комментарии и материалы, опубликованные <em>другими пользователями</em>, в которых упоминают тебя или отвечают тебе, не удаляются, поскольку принадлежат аккаунтам этих пользователей. При удалении аккаунта удаляются только данные, связанные с твоим аккаунтом.</p></div>
+<h2>Срок удаления</h2><p>Удаление происходит немедленно — периода ожидания нет. После подтверждения данные сразу удаляются из наших систем.</p>
+<h2>Нужна помощь?</h2><p>Если у тебя нет доступа к приложению и ты не можешь удалить аккаунт самостоятельно — например, из-за потери доступа к устройству — напиши нам на <a href="mailto:feedback.struyach@gmail.com">feedback.struyach@gmail.com</a>. Мы обработаем запрос на удаление аккаунта.</p>
+</div></section>
+
+<section class="content" data-content="th">
+<h1>วิธีลบบัญชีของคุณ</h1><p class="subtitle">Struyach Fitness Apps</p>
+<div class="card">
+<p>คุณสามารถลบบัญชี Struyach Athlete และข้อมูลทั้งหมดที่เกี่ยวข้องอย่างถาวรได้โดยตรงจากภายในแอปทุกเมื่อ โดยไม่จำเป็นต้องติดต่อฝ่ายสนับสนุน</p>
+<h2>ขั้นตอนการลบบัญชี</h2>
+<ol>
+<li>เปิดแอป Struyach Athlete และเข้าสู่ระบบบัญชีของคุณ</li>
+<li>แตะแท็บ <strong>“การตั้งค่า”</strong> ที่ด้านล่างของหน้าจอ</li>
+<li>เลื่อนลงไปที่ส่วน <strong>“ออกจากระบบหรือลบบัญชี”</strong></li>
+<li>แตะ <strong>“ลบบัญชีและข้อมูลทั้งหมด”</strong></li>
+<li>อ่านคำเตือนเพื่อยืนยัน แล้วพิมพ์ <strong>“ยืนยัน”</strong> ในช่องข้อความเพื่อดำเนินการต่อ</li>
+<li>แตะ <strong>“ลบ”</strong> บัญชีและข้อมูลทั้งหมดที่เกี่ยวข้องจะถูกลบอย่างถาวรทันที</li>
+</ol>
+<div class="notice warning"><strong>การดำเนินการนี้ไม่สามารถย้อนกลับได้</strong> เมื่อยืนยันแล้ว จะไม่สามารถกู้คืนบัญชีของคุณได้</div>
+<h2>ข้อมูลที่จะถูกลบ</h2><p>เมื่อคุณลบบัญชี ข้อมูลต่อไปนี้จะถูกลบอย่างถาวร:</p>
+<ul>
+<li>โปรไฟล์บัญชีของคุณ ได้แก่ ชื่อ อีเมล และรูปโปรไฟล์</li>
+<li>สถิติส่วนตัวในการยกน้ำหนักและยิมนาสติก</li>
+<li>รูปภาพและวิดีโอทั้งหมดที่คุณอัปโหลดในความคิดเห็น</li>
+<li>ความคิดเห็นทั้งหมดที่คุณโพสต์ในทุกแผนการฝึกและโพสต์ในบล็อก</li>
+<li>โพสต์และการฝึกที่คุณกดถูกใจ รวมถึงความคืบหน้าของการฝึกที่เสร็จสิ้น</li>
+<li>บันทึกไดอารี่การฝึกของคุณ</li>
+<li>การตั้งค่าการแจ้งเตือนและโทเคนอุปกรณ์</li>
+</ul>
+<h2>ข้อมูลที่ไม่ได้รับผลกระทบ</h2><div class="notice"><p>ความคิดเห็นและเนื้อหาที่โพสต์โดย <em>ผู้ใช้รายอื่น</em> ซึ่งกล่าวถึงหรือตอบกลับคุณจะไม่ถูกลบ เนื่องจากข้อมูลเหล่านั้นเป็นของบัญชีผู้ใช้รายอื่น การลบบัญชีจะลบเฉพาะข้อมูลที่เชื่อมโยงกับบัญชีของคุณเท่านั้น</p></div>
+<h2>ระยะเวลาในการลบ</h2><p>การลบจะเกิดขึ้นทันทีโดยไม่มีระยะเวลารอ เมื่อคุณยืนยันแล้ว ข้อมูลจะถูกลบออกจากระบบของเราทันที</p>
+<h2>ต้องการความช่วยเหลือ?</h2><p>หากคุณไม่สามารถเข้าใช้แอปเพื่อลบบัญชีด้วยตนเองได้ เช่น ไม่สามารถเข้าถึงอุปกรณ์ของคุณ กรุณาติดต่อเราที่ <a href="mailto:feedback.struyach@gmail.com">feedback.struyach@gmail.com</a> แล้วเราจะดำเนินการตามคำขอลบบัญชีให้คุณ</p>
+</div></section>
+
+<footer><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a></footer>
+</main>
+<script>
+const supported=["en","ru","th"];const browserLanguage=(navigator.language||"en").slice(0,2).toLowerCase();
+function setLanguage(language){const lang=supported.includes(language)?language:"en";document.documentElement.lang=lang;document.querySelectorAll("[data-lang]").forEach(button=>{const active=button.dataset.lang===lang;button.classList.toggle("active",active);button.setAttribute("aria-pressed",String(active))});document.querySelectorAll("[data-content]").forEach(section=>section.classList.toggle("active",section.dataset.content===lang));localStorage.setItem("struyach-delete-account-language",lang)}
+document.querySelectorAll("[data-lang]").forEach(button=>button.addEventListener("click",()=>setLanguage(button.dataset.lang)));setLanguage(localStorage.getItem("struyach-delete-account-language")||browserLanguage);
+</script>
+</body>
+</html>
