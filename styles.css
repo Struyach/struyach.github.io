@@ -58,3 +58,50 @@ body[data-lang="en"] .hero,body[data-lang="ru"] .hero{padding-top:32px}
 body[data-lang="en"] .hero,body[data-lang="ru"] .hero,body[data-lang="th"] .hero{padding-top:16px;align-items:start}
 .hero-copy{padding-top:42px}
 @media(max-width:900px){body[data-lang="en"] .hero,body[data-lang="ru"] .hero,body[data-lang="th"] .hero{padding-top:22px}.hero-copy{padding-top:28px}}
+
+.footer-copy{display:flex;flex-direction:column;gap:3px}
+.footer-links{display:flex;justify-content:flex-end;gap:8px 18px;flex-wrap:wrap;max-width:620px}
+.footer-links a{color:#89928d;text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:var(--green)}
+
+/* Mobile layout: keep every section inside one full-width content column. */
+@media(max-width:600px){
+  :root{--shell:calc(100% - 28px)}
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  .shell{width:calc(100% - 28px);max-width:100%}
+  .hero,.feature-stage,.plans-grid,.coach-card,.progress,.final-cta .shell{width:100%;min-width:0}
+
+  .hero{grid-template-columns:minmax(0,1fr);padding-top:22px}
+  .hero-copy{width:100%;min-width:0;text-align:left}
+  .hero-copy .lede{margin-left:0;margin-right:0}
+  .hero-copy .store-row{justify-content:flex-start}
+  .hero-visual{width:100%;min-width:0;overflow:hidden}
+  .hero-visual img{width:100%;max-width:100%}
+
+  .proof-strip{overflow:hidden}
+  .proof-grid{grid-template-columns:repeat(4,minmax(0,1fr));width:100%;max-width:100%}
+  .proof-grid div{display:block;min-width:0;padding:17px 5px;text-align:center;border-right:1px solid var(--line)}
+  .proof-grid div:first-child{border-left:0}
+  .proof-grid div:last-child{border-right:0}
+  .proof-grid strong{display:block;font-size:1.18rem;line-height:1.15}
+  .proof-grid span,.proof-grid div:first-child span{display:block;margin-top:5px;font-size:.56rem;line-height:1.25;white-space:normal;overflow-wrap:anywhere}
+
+  .section-heading,.feature-copy,.plans-grid,.plan,.coach-copy,.progress-copy{width:100%;max-width:none;min-width:0}
+  .plans-grid{grid-template-columns:minmax(0,1fr)}
+  .plan,.plan.compact{grid-column:1;width:100%;max-width:100%}
+
+  .coach-card{grid-template-columns:minmax(0,1fr)}
+  .coach-facts{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+  .coach-facts span{width:max-content;max-width:100%}
+
+  .progress{grid-template-columns:minmax(0,1fr)}
+  .progress-copy{text-align:left}
+  .progress-copy .check-list{margin-left:0;margin-right:0}
+  .progress-visual{width:100%;min-width:0;overflow:hidden}
+
+  .final-cta{width:100%;overflow:hidden}
+  .final-cta .shell{margin-left:auto;margin-right:auto}
+
+  footer.shell{width:calc(100% - 28px);min-height:0;padding:28px 0;align-items:flex-start;text-align:left}
+  .footer-links{display:grid;grid-template-columns:1fr 1fr;width:100%;max-width:none;justify-content:start;gap:8px 14px}
+}
