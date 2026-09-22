@@ -69,12 +69,14 @@ body[data-lang="en"] .hero,body[data-lang="ru"] .hero,body[data-lang="th"] .hero
   :root{--shell:calc(100% - 28px)}
   html,body{width:100%;max-width:100%;overflow-x:hidden}
   .shell{width:calc(100% - 28px);max-width:100%}
-  .hero,.feature-stage,.plans-grid,.coach-card,.progress,.final-cta .shell{width:100%;min-width:0}
+  .feature-stage,.plans-grid,.coach-card{width:100%;min-width:0}
+  .hero,.progress,.final-cta .shell{width:calc(100% - 32px);min-width:0;margin-left:auto;margin-right:auto}
 
   .hero{grid-template-columns:minmax(0,1fr);padding-top:22px}
   .hero-copy{width:100%;min-width:0;text-align:left}
   .hero-copy .lede{margin-left:0;margin-right:0}
   .hero-copy .store-row{justify-content:flex-start}
+  .hero-copy .availability{width:100%;text-align:center}
   .hero-visual{width:100%;min-width:0;overflow:hidden}
   .hero-visual img{width:100%;max-width:100%}
 
