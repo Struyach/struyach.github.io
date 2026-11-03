@@ -127,11 +127,9 @@ body[data-lang="en"] .hero,body[data-lang="ru"] .hero,body[data-lang="th"] .hero
 @media(max-width:600px){
   .trial-line{font-size:.86rem}
   .coach{padding-block:56px 0}
-  .coach-photo{min-height:360px}
-  .coach-photo img{object-position:center 42%}
   .progress{padding-top:85px}
 }
-.apple-icon svg{display:block;margin:auto}
+.apple-icon svg,.play-icon svg{display:block;margin:auto}
 
 /* App Store rating and reviews */
 .reviews{padding-top:90px}
@@ -145,3 +143,64 @@ body[data-lang="en"] .hero,body[data-lang="ru"] .hero,body[data-lang="th"] .hero
 .reviews-note{margin:14px 0 0;color:#89928d;font-size:.75rem}
 @media(max-width:900px){.reviews-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.reviews{padding-top:56px}.reviews-grid figure{padding:18px 20px;gap:10px}.reviews-count{display:block;margin-top:6px;white-space:normal}}
+
+/* Compact phone layout: tighter spacing, no empty gaps, full coach photo. */
+@media(max-width:600px){
+  .nav{height:62px}
+  body[data-lang] .hero{padding-block:2px 18px}
+  .hero{gap:4px}
+  .hero-copy{padding-top:8px}
+  .eyebrow{margin-bottom:10px}
+  .hero h1{font-size:2.3rem;line-height:1.04}
+  .lede{margin:12px 0;font-size:.95rem;line-height:1.5}
+  .trial-line{display:block;margin:0 0 12px;padding:8px 12px;font-size:.84rem;white-space:pre-line}
+  .store-button{height:52px}
+  .hero-copy .availability{margin:8px 0 0;font-size:.72rem}
+  .hero-visual{min-height:0;height:calc((100vw - 32px)*.9);margin-top:2px}
+  .proof-grid div{padding-block:12px}
+
+  .section,.plans-section{padding-block:48px}
+  .section-heading{margin-bottom:22px}
+  .section-heading h2,.coach h2,.progress h2,.final-cta h2{font-size:1.85rem;line-height:1.08;letter-spacing:-.04em}
+  .section-heading>p:last-child,.progress-copy>p,.coach-copy>p,.final-cta p{font-size:.95rem;line-height:1.5}
+
+  .coach{padding-block:28px 0}
+  .coach-card{min-height:0;border-radius:22px}
+  .coach-photo{min-height:0;aspect-ratio:4/5}
+  .coach-photo img{object-position:center}
+  .coach-copy{padding:22px 20px}
+  .coach-lede{font-size:1.05rem!important;line-height:1.4}
+  .coach-copy>p{margin:10px 0}
+  .coach-facts{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+  .coach-facts span{width:auto;padding:6px 10px}
+
+  .reviews{padding-top:36px}
+  .reviews-head h2{font-size:1.85rem}
+  .reviews-grid{gap:10px;margin-top:16px}
+  .reviews-grid figure{padding:14px 16px;gap:6px;border-radius:16px}
+  .reviews-grid blockquote{font-size:.98rem}
+
+  .feature-stage{gap:8px}
+  .feature-copy article{grid-template-columns:28px 1fr;gap:10px;padding:14px 0}
+  .feature-copy h3{font-size:1.05rem;margin-bottom:4px}
+  .phone-stack{min-height:290px}
+
+  .plans-grid{gap:12px}
+  .plan{padding:20px;border-radius:18px}
+  .plan h3{margin:12px 0 6px;font-size:1.35rem}
+  .plan>p{margin:0;line-height:1.5}
+  .plan ul{margin-top:12px}
+  .plan li{padding-block:6px}
+  .plan-price{padding-top:14px}
+  .plan.compact h3{margin:8px 0 0}
+  .plan.compact p{margin:8px 0 0;max-width:none}
+  .price-note{margin-top:12px}
+
+  .progress{padding-block:48px;gap:8px}
+  .check-list{margin:14px 0}
+  .check-list li{padding:8px 0}
+  .progress-visual{min-height:0}
+  .progress-visual img{margin-block:-14%}
+  .final-cta{padding-block:48px}
+  .final-cta p:not(.eyebrow){margin:12px auto 18px}
+}
