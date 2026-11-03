@@ -4,8 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#090b0b">
-  <meta name="description" content="Training programs by coach Roman Mezhov. Train, share results and track your progress in one app.">
-  <title>Struyach Athlete — Train with purpose</title>
+  <meta name="description" content="A new workout every weekday from coach Roman Mezhov, for athletes who train on their own. Try it free for 7 days on iOS and Android.">
+  <title>Struyach Athlete: a new workout every weekday</title>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://struyach.github.io/">
+  <meta property="og:title" content="Struyach Athlete: a new workout every weekday">
+  <meta property="og:description" content="Workouts from coach Roman Mezhov for athletes who train on their own. 7 days free on iOS and Android.">
+  <meta property="og:image" content="https://struyach.github.io/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -29,9 +38,10 @@
         <p class="eyebrow" data-i18n="heroEyebrow"></p>
         <h1 data-i18n="heroTitle"></h1>
         <p class="lede" data-i18n="heroText"></p>
+        <p class="trial-line" data-i18n="heroTrial"></p>
         <div class="store-row">
           <a class="store-button apple" id="appStoreLink" href="https://apps.apple.com/app/apple-store/id6448619309?pt=126326864&amp;ct=landing&amp;mt=8" target="_blank" rel="noopener" aria-label="Download on the App Store">
-            <span class="store-icon apple-icon" aria-hidden="true">&#63743;</span><span><small data-i18n="appStoreSmall"></small><strong>App Store</strong></span>
+            <span class="store-icon apple-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg></span><span><small data-i18n="appStoreSmall"></small><strong>App Store</strong></span>
           </a>
           <a class="store-button apple" id="googlePlayLink" href="https://play.google.com/store/apps/details?id=com.struyachfitness.athlete&amp;referrer=utm_source%3Dlanding%26utm_medium%3Dweb" target="_blank" rel="noopener" aria-label="Get it on Google Play">
             <span class="play-icon" aria-hidden="true">▶</span><span><small data-i18n="googleSmall"></small><strong>Google Play</strong></span>
@@ -49,9 +59,37 @@
       <div class="shell proof-grid">
         <div><strong>14+</strong><span data-i18n="proofCoach"></span></div>
         <div><strong>5</strong><span data-i18n="proofPlans"></span></div>
-        <div><strong>3</strong><span data-i18n="proofLanguages"></span></div>
-        <div><strong>1</strong><span data-i18n="proofCommunity"></span></div>
+        <div><strong>4.8</strong><span data-i18n="proofRating"></span></div>
+        <div><strong>7</strong><span data-i18n="proofTrial"></span></div>
       </div>
+    </section>
+
+    <section class="coach shell" id="coach">
+      <div class="coach-card">
+        <div class="coach-photo"><img src="assets/roman-mezhov.jpg" width="1000" height="1250" loading="lazy" alt="Roman Mezhov performing a deadlift"></div>
+        <div class="coach-copy">
+          <p class="eyebrow" data-i18n="coachEyebrow"></p>
+          <h2 class="locale-only locale-en">Roman Mezhov</h2>
+          <h2 class="locale-only locale-ru">Роман Межов</h2>
+          <h2 class="locale-only locale-th">โรมัน เมชอฟ</h2>
+          <p class="coach-lede" data-i18n="coachTitle"></p>
+          <p data-i18n="coachText"></p>
+          <div class="coach-facts"><span data-i18n="coachFactOne"></span><span data-i18n="coachFactTwo"></span><span data-i18n="coachFactThree"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews shell" id="reviews">
+      <div class="reviews-head">
+        <p class="eyebrow" data-i18n="reviewsEyebrow"></p>
+        <h2><span class="stars" aria-hidden="true">★</span> 4.8 <span class="reviews-count" data-i18n="reviewsCount"></span></h2>
+      </div>
+      <div class="reviews-grid">
+        <figure><blockquote data-i18n="reviewOne"></blockquote><figcaption>Tomaka7</figcaption></figure>
+        <figure><blockquote data-i18n="reviewTwo"></blockquote><figcaption>Толик и Людмилка</figcaption></figure>
+        <figure><blockquote data-i18n="reviewThree"></blockquote><figcaption>LessterLess</figcaption></figure>
+      </div>
+      <p class="reviews-note" data-i18n="reviewsNote"></p>
     </section>
 
     <section class="section shell" id="experience">
@@ -67,8 +105,8 @@
           <article><span class="feature-number">03</span><div><h3 data-i18n="featureThreeTitle"></h3><p data-i18n="featureThreeText"></p></div></article>
         </div>
         <div class="phone-stack">
-          <img id="workoutImage" class="phone phone-main" src="assets/en-workout.png" alt="Workout screen">
-          <img id="communityImage" class="phone phone-back" src="assets/en-community.png" alt="Athlete comments">
+          <img id="workoutImage" class="phone phone-main" loading="lazy" src="assets/en-workout.png" alt="Workout screen">
+          <img id="communityImage" class="phone phone-back" loading="lazy" src="assets/en-community.png" alt="Athlete comments">
         </div>
       </div>
     </section>
@@ -85,35 +123,30 @@
             <div class="plan-top"><span class="plan-type" data-i18n="subscription"></span><span class="plan-badge" data-i18n="mostPopular"></span></div>
             <h3>Group Class Plan</h3><p data-i18n="groupIntro"></p>
             <ul><li data-i18n="groupOne"></li><li data-i18n="groupTwo"></li><li data-i18n="groupThree"></li></ul>
+            <div class="plan-price">
+              <div class="price-cells"><div><span data-i18n="priceMonthly"></span><strong data-i18n="groupMonthly"></strong></div><div><span data-i18n="priceYearly"></span><strong data-i18n="groupYearly"></strong></div></div>
+              <p class="price-trial" data-i18n="planTrial"></p>
+            </div>
           </article>
           <article class="plan">
             <div class="plan-top"><span class="plan-type" data-i18n="subscription"></span></div>
             <h3>Struyach Plan</h3><p data-i18n="struyachIntro"></p>
             <ul><li data-i18n="struyachOne"></li><li data-i18n="struyachTwo"></li><li data-i18n="struyachThree"></li></ul>
+            <div class="plan-price">
+              <div class="price-cells"><div><span data-i18n="priceMonthly"></span><strong data-i18n="struyachMonthly"></strong></div><div><span data-i18n="priceYearly"></span><strong data-i18n="struyachYearly"></strong></div></div>
+              <p class="price-trial" data-i18n="planTrial"></p>
+            </div>
           </article>
           <article class="plan accent">
             <div class="plan-top"><span class="plan-type" data-i18n="oneTime"></span><span class="plan-badge" data-i18n="elevenWeeks"></span></div>
             <h3>Weightlifting Cycle</h3><p data-i18n="weightIntro"></p>
             <ul><li data-i18n="weightOne"></li><li data-i18n="weightTwo"></li><li data-i18n="weightThree"></li></ul>
+            <div class="plan-price"><div class="price-cells single"><div><strong data-i18n="weightPrice"></strong></div></div></div>
           </article>
-          <article class="plan compact"><div><span class="plan-type" data-i18n="oneTime"></span><h3>Belly Burner</h3></div><p data-i18n="bellyText"></p></article>
-          <article class="plan compact"><div><span class="plan-type" data-i18n="oneTime"></span><h3>Pelvic Power</h3></div><p data-i18n="pelvicText"></p></article>
+          <article class="plan compact"><div><span class="plan-type" data-i18n="oneTime"></span><h3>Belly Burner</h3><strong class="compact-price" data-i18n="smallPrice"></strong></div><p data-i18n="bellyText"></p></article>
+          <article class="plan compact"><div><span class="plan-type" data-i18n="oneTime"></span><h3>Pelvic Power</h3><strong class="compact-price" data-i18n="smallPrice"></strong></div><p data-i18n="pelvicText"></p></article>
         </div>
-      </div>
-    </section>
-
-    <section class="coach shell" id="coach">
-      <div class="coach-card">
-        <div class="coach-photo"><img src="assets/roman-mezhov.png" alt="Roman Mezhov performing a deadlift"></div>
-        <div class="coach-copy">
-          <p class="eyebrow" data-i18n="coachEyebrow"></p>
-          <h2 class="locale-only locale-en">Roman Mezhov</h2>
-          <h2 class="locale-only locale-ru">Роман Межов</h2>
-          <h2 class="locale-only locale-th">โรมัน เมชอฟ</h2>
-          <p class="coach-lede" data-i18n="coachTitle"></p>
-          <p data-i18n="coachText"></p>
-          <div class="coach-facts"><span data-i18n="coachFactOne"></span><span data-i18n="coachFactTwo"></span><span data-i18n="coachFactThree"></span></div>
-        </div>
+        <p class="price-note" data-i18n="priceNote"></p>
       </div>
     </section>
 
@@ -122,9 +155,9 @@
         <p class="eyebrow" data-i18n="progressEyebrow"></p>
         <h2 data-i18n="progressTitle"></h2>
         <p data-i18n="progressText"></p>
-        <ul class="check-list"><li data-i18n="progressOne"></li><li data-i18n="progressTwo"></li><li data-i18n="progressThree"></li></ul>
+        <ul class="check-list"><li data-i18n="progressOne"></li><li data-i18n="progressTwo"></li><li data-i18n="progressFour"></li><li data-i18n="progressThree"></li></ul>
       </div>
-      <div class="progress-visual"><img id="recordsImage" src="assets/en-records.png" alt="Personal records in the app"></div>
+      <div class="progress-visual"><img id="recordsImage" loading="lazy" src="assets/en-records.png" alt="Personal records in the app"></div>
     </section>
 
     <section class="final-cta">
@@ -135,7 +168,7 @@
         <h2 class="locale-only locale-th">เริ่มจากจุดที่คุณอยู่ แล้วพัฒนาต่อไป</h2>
         <p data-i18n="ctaText"></p>
         <div class="store-row centered-buttons">
-          <a class="store-button apple" href="https://apps.apple.com/app/apple-store/id6448619309?pt=126326864&amp;ct=landing&amp;mt=8" target="_blank" rel="noopener"><span class="store-icon apple-icon" aria-hidden="true">&#63743;</span><span><small data-i18n="appStoreSmall"></small><strong>App Store</strong></span></a>
+          <a class="store-button apple" href="https://apps.apple.com/app/apple-store/id6448619309?pt=126326864&amp;ct=landing&amp;mt=8" target="_blank" rel="noopener"><span class="store-icon apple-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg></span><span><small data-i18n="appStoreSmall"></small><strong>App Store</strong></span></a>
           <a class="store-button apple" href="https://play.google.com/store/apps/details?id=com.struyachfitness.athlete&amp;referrer=utm_source%3Dlanding%26utm_medium%3Dweb" target="_blank" rel="noopener" aria-label="Get it on Google Play"><span class="play-icon" aria-hidden="true">▶</span><span><small data-i18n="googleSmall"></small><strong>Google Play</strong></span></a>
         </div>
       </div>

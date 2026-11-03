@@ -107,3 +107,41 @@ body[data-lang="en"] .hero,body[data-lang="ru"] .hero,body[data-lang="th"] .hero
   footer.shell{width:calc(100% - 28px);min-height:0;padding:28px 0;align-items:flex-start;text-align:left}
   .footer-links{display:grid;grid-template-columns:1fr 1fr;width:100%;max-width:none;justify-content:start;gap:8px 14px}
 }
+
+/* Free trial line, plan prices and the coach section placed higher on the page. */
+.trial-line{display:inline-block;margin:0 0 18px;padding:9px 14px;border:1px solid rgba(111,216,116,.45);border-radius:12px;background:rgba(111,216,116,.1);color:var(--green);font-size:.92rem;font-weight:700;line-height:1.35}
+.coach{padding-bottom:0}
+.progress{padding-top:130px}
+.plan{display:flex;flex-direction:column}
+.plan.compact{flex-direction:row}
+.plan-price{margin-top:auto;padding-top:22px}
+.price-cells{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.price-cells.single{grid-template-columns:1fr}
+.price-cells>div{background:rgba(255,255,255,.055);border-radius:12px;padding:11px 13px}
+.price-cells span{display:block;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);line-height:1.3}
+.price-cells strong{display:block;margin-top:3px;font-size:1.28rem;line-height:1.2;letter-spacing:-.02em;white-space:nowrap}
+.price-trial{margin:10px 0 0;color:var(--green);font-size:.84rem;font-weight:700}
+.compact-price{display:block;margin-top:6px;font-size:1.1rem}
+.price-note{margin:18px 0 0;text-align:center;color:var(--muted);font-size:.78rem}
+@media(max-width:900px){.coach-photo{min-height:480px}.plan.compact{display:block}}
+@media(max-width:600px){
+  .trial-line{font-size:.86rem}
+  .coach{padding-block:56px 0}
+  .coach-photo{min-height:360px}
+  .coach-photo img{object-position:center 42%}
+  .progress{padding-top:85px}
+}
+.apple-icon svg{display:block;margin:auto}
+
+/* App Store rating and reviews */
+.reviews{padding-top:90px}
+.reviews-head h2{margin:0;font-size:clamp(2rem,3.6vw,3.2rem);line-height:1.05;letter-spacing:-.04em}
+.reviews .stars{color:var(--green)}
+.reviews-count{font-size:1rem;font-weight:500;letter-spacing:0;color:var(--muted);white-space:nowrap}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.reviews-grid figure{margin:0;display:flex;flex-direction:column;justify-content:space-between;gap:18px;padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:20px}
+.reviews-grid blockquote{margin:0;font-size:1.05rem;font-weight:600;line-height:1.4}
+.reviews-grid figcaption{color:var(--muted);font-size:.8rem}
+.reviews-note{margin:14px 0 0;color:#89928d;font-size:.75rem}
+@media(max-width:900px){.reviews-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.reviews{padding-top:56px}.reviews-grid figure{padding:18px 20px;gap:10px}.reviews-count{display:block;margin-top:6px;white-space:normal}}
