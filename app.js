@@ -20,6 +20,11 @@ function setLanguage(lang){const strings=content[lang];document.documentElement.
 content.ru.heroEyebrow="Приложение для тренировок";
 content.ru.appStoreSmall="Скачай в";
 content.ru.plansText="Две регулярные подписки и три отдельные программы, которые покупаются один раз\nи остаются с тобой навсегда";
+Object.assign(content.en,{footerStats:"Anonymous, cookie-free visit counting."});
+Object.assign(content.ru,{footerStats:"Анонимный подсчёт посещений без cookie."});
+Object.assign(content.th,{footerStats:"นับจำนวนผู้เข้าชมแบบไม่ระบุตัวตน ไม่ใช้คุกกี้"});
 document.querySelectorAll("[data-lang]").forEach(button=>button.addEventListener("click",()=>setLanguage(button.dataset.lang)));
 document.getElementById("year").textContent=new Date().getFullYear();
 let saved=null;try{saved=localStorage.getItem("struyach-language")}catch(e){}const browser=navigator.language.toLowerCase();setLanguage(saved|| (browser.startsWith("ru")?"ru":browser.startsWith("th")?"th":"en"));
+// Anonymous, cookie-free click counting (GoatCounter): which store button was pressed, hero or bottom of the page.
+document.querySelectorAll("a.store-button").forEach(a=>a.addEventListener("click",()=>{if(!window.goatcounter||!window.goatcounter.count)return;const store=a.href.includes("apple.com")?"app-store":"google-play";const place=a.id?"hero":"bottom";window.goatcounter.count({path:"click/"+store+"/"+place,title:"Click "+store+" ("+place+")",event:true})}));
